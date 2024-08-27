@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SearchIcon, BellIcon, MenuIcon, AvatarImage } from '../assets';
 
 const Header = () => {
+  const [search, setSearch] = useState('');
+
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+  };
+
   return (
     <header className=''>
       <div className='flex items-center gap-5 justify-end'>
         <form className='relative hidden md:block'>
           <input
-            className='bg-secondary h-10 w-72 rounded-md pl-10'
+            className='bg-secondary text-white h-10 w-72 rounded-md pl-10'
             placeholder='Search...'
+            value={search}
+            onChange={handleSearch}
           />
           <img
             src={SearchIcon}
