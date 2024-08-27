@@ -1,0 +1,162 @@
+{
+    "sideBarItems": [
+      { "id": 1, "name": "Home" },
+      { "id": 2, "name": "Realtime" },
+      { "id": 3, "name": "Events" },
+      { "id": 4, "name": "Devices" },
+      { "id": 5, "name": "Domain" },
+      { "id": 6, "name": "Settings" }
+    ],
+    "liveEvents": [
+      {
+        "id": 1,
+        "name": "Total Info",
+        "amount": 13,
+        "percentage": "15.2%",
+        "icon": "BlueEllipse"
+      },
+      {
+        "id": 2,
+        "name": "Total Alerts",
+        "amount": 5,
+        "percentage": "15.2%",
+        "icon": "OrangeEllipse"
+      },
+      {
+        "id": 3,
+        "name": "Total Alarms",
+        "amount": 1,
+        "percentage": "15.2%",
+        "icon": "RedEllipse"
+      }
+    ],
+    "devicesStatus": [
+      { "id": 1, "name": "Assigned", "amount": 724, "color": "#5A91DD" },
+      { "id": 2, "name": "Idle", "amount": 120, "color": "#66C088" },
+      { "id": 3, "name": "Others", "amount": 80, "color": "#DA9D00" }
+    ],
+    "weather": {
+      "temperature": "32°C",
+      "times": [
+        { "id": 1, "time": "2 PM", "temperature": "30" },
+        { "id": 2, "time": "3 PM", "temperature": "28" }
+      ]
+    },
+    "people": [
+      {
+        "id": 1,
+        "fullName": "Mohammad Yousef Ali",
+        "role": "HSE Manager",
+        "avatar": "Mohammed",
+        "time": "01:44"
+      },
+      {
+        "id": 2,
+        "fullName": "Saleem Mohammad Sami",
+        "role": "Safety Supervision",
+        "avatar": "Saleem",
+        "time": "01:20"
+      },
+      {
+        "id": 3,
+        "fullName": "Sami Hamad Ali",
+        "role": "Operator",
+        "avatar": "Sami",
+        "time": "00.45"
+      },
+      {
+        "id": 4,
+        "fullName": "Osama Omar Ibrahem",
+        "role": "Maintenance Engineer",
+        "avatar": "Osama",
+        "time": "00:35"
+      }
+    ],
+    "totalLiveEvents": [
+      {
+        "id": 1,
+        "name": "Total Alerts",
+        "icon": "Alert",
+        "percentage": "15.2%",
+        "amount": 487
+      },
+      {
+        "id": 2,
+        "name": "Total Alarms",
+        "icon": "Alarm",
+        "percentage": "15.2%",
+        "amount": 600
+      },
+      {
+        "id": 3,
+        "name": "Previous Year Total",
+        "icon": null,
+        "percentage": "15.2%",
+        "amount": 1187
+      }
+    ],
+    "sites": [
+      {
+        "id": 1,
+        "name": "Site 1",
+        "totalEvents": "0.7%",
+        "prevYear": { "value": "4%", "trend": "14.2%" },
+        "average": { "value": "5%", "trend": "20%" },
+        "chart": {
+          "data": [
+            { "id": 1, "value": "35%", "color": "#BC4C34" },
+            { "id": 2, "value": "65%", "color": "#DA7739" }
+          ],
+          "top": 13,
+          "bottom": 48
+        }
+      },
+      {
+        "id": 2,
+        "name": "Site 3",
+        "totalEvents": "6.4%",
+        "prevYear": { "value": "4%", "trend": "28.5%" },
+        "average": { "value": "5%", "trend": "50%" },
+        "chart": {
+          "data": [
+            { "id": 1, "value": "35%", "color": "#BC4C34" },
+            { "id": 2, "value": "65%", "color": "#5A91E2" }
+          ],
+          "top": 18,
+          "bottom": 54
+        }
+      },
+      {
+        "id": 3,
+        "name": "Site 2",
+        "totalEvents": "6%",
+        "prevYear": { "value": "4%", "trend": "14.2%" },
+        "average": { "value": "5%", "trend": "20%" },
+        "chart": {
+          "data": [
+            { "id": 1, "value": "35%", "color": "#BC4C34" },
+            { "id": 2, "value": "35%", "color": "#DA7739" },
+            { "id": 3, "value": "30%", "color": "#5A91E2" }
+          ],
+          "top": 13,
+          "bottom": 48
+        }
+      },
+      {
+        "id": 4,
+        "name": "Site 4",
+        "totalEvents": "22.32%",
+        "prevYear": { "value": "4%", "trend": "14.2%" },
+        "average": { "value": "5%", "trend": "20%" },
+        "chart": {
+          "data": [
+            { "id": 1, "value": "50%", "color": "#BC4C34" },
+            { "id": 2, "value": "50%", "color": "#DA7739" }
+          ],
+          "top": 24,
+          "bottom": 32
+        }
+      }
+    ]
+  }
+  
