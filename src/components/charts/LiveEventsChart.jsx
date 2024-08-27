@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMedia } from 'react-use';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 
 const data = [
@@ -8,15 +9,19 @@ const data = [
 ];
 
 const LiveEventsChart = () => {
+  const isMobile = useMedia('(max-width: 768px)');
+
   return (
-    <div className='relative p-12 bg-[#3B3B3B] rounded-md'>
-      <ResponsiveContainer width={340} height={340}>
+    <div className='relative p-2 md:p-12 bg-[#3B3B3B] rounded-md'>
+      <ResponsiveContainer
+        width={isMobile ? 250 : 340}
+        height={isMobile ? 250 : 340}>
         <PieChart>
           <Tooltip />
           <Pie
             data={data}
-            innerRadius={150}
-            outerRadius={170}
+            innerRadius={isMobile ? 100 : 150}
+            outerRadius={isMobile ? 120 : 170}
             paddingAngle={0}
             dataKey='value'
             strokeWidth={0}>
