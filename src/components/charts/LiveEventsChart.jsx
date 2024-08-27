@@ -12,7 +12,11 @@ const LiveEventsChart = () => {
   const isMobile = useMedia('(max-width: 768px)');
 
   return (
-    <div className='relative p-2 md:p-12 bg-[#3B3B3B] rounded-md'>
+    <div className='relative flex items-center md:block p-2 md:p-12 bg-[#3B3B3B] rounded-md'>
+      <h2 className='absolute hidden md:block top-12 right-12 text-white'>
+        270
+      </h2>
+      <h2 className='absolute hidden md:block bottom-12 text-white'>841</h2>
       <ResponsiveContainer
         width={isMobile ? 250 : 340}
         height={isMobile ? 250 : 340}>
@@ -31,7 +35,7 @@ const LiveEventsChart = () => {
           </Pie>
         </PieChart>
       </ResponsiveContainer>
-      <div className='absolute h-full w-full top-0 flex justify-center items-center flex-col left-0'>
+      <div className='md:absolute h-full w-full top-0 flex justify-center items-center flex-col left-0'>
         <h2 className='text-light-white text-2xl'>Total Events</h2>
         <h2 className='text-white text-6xl mt-2'>1,111</h2>
       </div>
